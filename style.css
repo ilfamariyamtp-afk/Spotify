@@ -1,57 +1,146 @@
 @font-face {
-    font-family: 'Variable';
-    src: url(https://encore.scdn.co/fonts/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2);
+  font-family: "Variable";
+  src: url(https://encore.scdn.co/fonts/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2);
 }
 
 @font-face {
-    font-family: 'Regular';
-    src: url(//encore.scdn.co/fonts/SpotifyMixUI-Regular-cc3b1de388efa4cbca6c75cebc24585e.woff2);
+  font-family: "Regular";
+  src: url(//encore.scdn.co/fonts/SpotifyMixUI-Regular-cc3b1de388efa4cbca6c75cebc24585e.woff2);
 }
 
 @font-face {
-    font-family: 'Bold';
-    src: url(https://encore.scdn.co/fonts/SpotifyMixUI-Bold-4264b799009b1db5c491778b1bc8e5b7.woff2);
+  font-family: "Bold";
+  src: url(https://encore.scdn.co/fonts/SpotifyMixUI-Bold-4264b799009b1db5c491778b1bc8e5b7.woff2);
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #121212;
+  background-color: #121212;
 }
 
 .open-button {
-    padding: 7px 16px;
-    border: none;
-    border-radius: 28px;
-    background-color: white;
-    font-family: bold;
-    font-size: 13px;
-    margin-top: -4px;
-    height: 32px;
+  padding: 7px 16px;
+  border: none;
+  border-radius: 28px;
+  background-color: white;
+  font-family: bold;
+  font-size: 13px;
+  margin-top: -4px;
+  height: 32px;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    width:100%;
-    z-index: 2;
-    box-sizing:border-box;
-    padding: 16px;
-    background-color: rgb(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  box-sizing: border-box;
+  padding: 16px;
+  background-color: rgb(0, 0, 0, 0.5);
 }
 
 .header img {
-    height: 24px;
+  height: 24px;
 }
 
 .header-menu-container {
-    display: flex;
+  display: flex;
 }
 
 .hamburger-icon {
-    margin-inline-start: 16px;
+  margin-inline-start: 16px;
+}
+
+.header-section {
+  display:none
+}
+
+@media screen and (min-width: 960px) { 
+  header {
+    display: none;
+  }
+  .header-section {
+    padding: 8px;
+    height: 48px;
+    background-color: black;
+    display: flex;
+  }
+
+  .spotify-logo {
+    margin: 8px 20px 20px 20px;
+  }
+
+  .home-search-section {
+    display: flex;
+    gap: 0px;
+    margin-left: 8px;
+
+  }
+
+  .home-search-section button {
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .user-actions {
+    padding: 2px 0px 2px 2px;
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+  }
+
+  .user-actions span {
+    color: #b3b3b3;
+    font-family: "bold";
+  }
+
+  .install-icon {
+    display: flex;
+    gap: 8px;
+    width:17.1%;
+  }
+
+  .border-line {
+    background-color: #fff;
+    height: 25px;
+    margin: 16px;
+    width: 1px;
+  }
+
+  .user-actions button {
+    padding: 13px 32px;
+    background-color: white;
+    border: none;
+    border-radius: 28px;
+    font-size: 16px;
+    font-family: bold;
+  }
+   .install-icon p{
+    color: #b3b3b3;
+    font-size: 14px;
+    font-weight: 700;
+   }
+  .user-actions-texts {
+    font-size: 14px;
+    font-family:bold;
+    color:#b3b3b3;
+    display: flex;
+    align-items: center;
+    gap:16px;
+  }
+   
+
+
 }
