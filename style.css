@@ -33,11 +33,12 @@ body {
   height: 32px;
 }
 
-header {
+.header-container {
   display: flex;
   justify-content: space-between;
   position: fixed;
   width: 100%;
+  height: 56px;
   z-index: 2;
   box-sizing: border-box;
   padding: 16px;
@@ -56,15 +57,19 @@ header {
   margin-inline-start: 16px;
 }
 
-.header-section {
-  display:none
+.header-section-tabview {
+  display: none;
+}
+.search-section-container {
+  display: none;
 }
 
-@media screen and (min-width: 960px) { 
-  header {
+@media screen and (min-width: 960px) {
+  .header-container {
     display: none;
   }
-  .header-section {
+
+  .header-section-tabview {
     padding: 8px;
     height: 48px;
     background-color: black;
@@ -72,20 +77,20 @@ header {
   }
 
   .spotify-logo {
+    max-width: fit-content;
     margin: 8px 20px 20px 20px;
   }
 
   .home-search-section {
     display: flex;
-    gap: 0px;
+    gap: 8px;
     margin-left: 8px;
-
   }
 
   .home-search-section button {
     border: none;
     border-radius: 50%;
-    width: 48px;
+    padding: 12px;
     background-color: #1f1f1f;
     display: flex;
     justify-content: center;
@@ -93,7 +98,7 @@ header {
   }
 
   .user-actions {
-    padding: 2px 0px 2px 2px;
+    padding: 2px 1px 2px 2px;
     display: flex;
     gap: 8px;
     justify-content: flex-end;
@@ -101,15 +106,17 @@ header {
     align-items: center;
   }
 
-  .user-actions span {
+  .user-actions a {
     color: #b3b3b3;
-    font-family: "bold";
+    font-family: bold;
   }
 
   .install-icon {
     display: flex;
     gap: 8px;
-    width:17.1%;
+    width: 12.1%;
+    justify-content: center;
+    padding: 0px 24px 0px 13px;
   }
 
   .border-line {
@@ -119,7 +126,7 @@ header {
     width: 1px;
   }
 
-  .user-actions button {
+  .user-action-text button {
     padding: 13px 32px;
     background-color: white;
     border: none;
@@ -127,20 +134,73 @@ header {
     font-size: 16px;
     font-family: bold;
   }
-   .install-icon p{
+  .install-icon a {
     color: #b3b3b3;
     font-size: 14px;
     font-weight: 700;
-   }
-  .user-actions-texts {
+    font-family: regular;
+  }
+  .user-action-text {
     font-size: 14px;
-    font-family:bold;
-    color:#b3b3b3;
+    font-family: bold;
+    color: #b3b3b3;
     display: flex;
     align-items: center;
-    gap:16px;
+    gap: 16px;
   }
-   
+}
+@media screen and (min-width: 1069px) {
+  .home-search-section-button {
+    display: none;
+  }
+  .search-section-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1f1f;
+    border-radius: 32px;
+    padding: 4px 2px 4px 12px;
+    width: 76%;
+  }
+  .header-container {
+    display: none;
+  }
 
-
+  .search-icon {
+    padding: 2px 12px 3px 15px;
+  }
+  input::placeholder {
+    background-color: #1f1f1f;
+    color: #b3b3b3;
+  }
+  input {
+    border: none;
+    font-size: 16px;
+    font-family: "regular";
+    text-overflow: ellipsis;
+    width: 186px;
+  }
+  .nav-line-container {
+    display: flex;
+    padding: 25px;
+  }
+  .nav-line {
+    width: 1px;
+    margin: 16px;
+    height: 25px;
+    background-color: #b3b3b3;
+  }
+  .user-actions {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .user-action-text {
+    padding: 0px 0px 0px 12px;
+  }
+}
+@media screen and (min-width: 1077px) {
+  input {
+    text-overflow: unset;
+  }
 }
