@@ -95,7 +95,7 @@ body {
     margin-left: 8px;
   }
 
-  .home-search-section .button {
+  .home-search-section .home-search-btn {
     border: none;
     border-radius: 50%;
     padding: 12px;
@@ -106,7 +106,7 @@ body {
   }
 
   .user-actions {
-    padding: 2px 1px 2px 2px;
+    padding: 2px 0px 2px 0px;
     display: flex;
     gap: 8px;
     justify-content: flex-end;
@@ -114,7 +114,7 @@ body {
     align-items: center;
   }
 
-  .user-actions a {
+  .action-btn {
     color: #b3b3b3;
     font-family: bold;
     text-decoration: none;
@@ -123,9 +123,10 @@ body {
   .install-icon {
     display: flex;
     gap: 8px;
-    width: 12.1%;
+    width: 66px;
     justify-content: center;
     padding: 0px 24px 0px 13px;
+    white-space: nowrap;
   }
 
   .border-line {
@@ -159,6 +160,7 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
+    padding: 0px 0px 0px 13px;
   }
 }
 
@@ -174,13 +176,13 @@ body {
     align-items: center;
     background-color: #1f1f1f;
     border-radius: 32px;
-    padding: 4px 60px 4px 12px;
-    width: 76%;
+    padding: 4px 16px 4px 12px;
+    width: 78%;
   }
 
   .nav-divider {
     border-left: 1px solid #b3b3b3;
-    padding: 0px 0px 0px 10px;
+    padding: 0px 0px 0px 12px;
   }
 
   .header-container {
@@ -196,12 +198,13 @@ body {
     color: #b3b3b3;
   }
 
-  input {
+  .search-input {
     border: none;
     font-size: 16px;
     font-family: "regular";
     text-overflow: ellipsis;
     width: 186px;
+    margin: 0px 42px 0px 0px;
   }
 
   .user-actions {
@@ -215,7 +218,7 @@ body {
 }
 
 @media screen and (min-width: 1077px) {
-  input {
+  .search-input {
     text-overflow: unset;
   }
 }
