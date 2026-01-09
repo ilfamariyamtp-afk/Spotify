@@ -125,8 +125,9 @@ body {
     gap: 8px;
     width: 66px;
     justify-content: center;
-    padding: 0px 24px 0px 13px;
+    padding: 2px 26px 3px 48px;
     white-space: nowrap;
+    border-left: 1px solid #f1f1f1;
   }
 
   .border-line {
@@ -168,7 +169,7 @@ body {
   .home-search-section .home-search-icon{
     display: none;
   }
-  
+
   .search-section-container {
     display: flex;
     flex-direction: row;
