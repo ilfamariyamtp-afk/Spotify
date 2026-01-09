@@ -165,10 +165,10 @@ body {
 }
 
 @media screen and (min-width: 1069px) {
-  .home-search-icon {
+  .home-search-section .home-search-icon{
     display: none;
   }
-
+  
   .search-section-container {
     display: flex;
     flex-direction: row;
@@ -181,7 +181,7 @@ body {
   }
 
   .nav-divider {
-    border-left: 1px solid #b3b3b3;
+    border-left: 1px solid rgba(255, 255, 255, 0.40);
     padding: 0px 0px 0px 12px;
   }
 
@@ -214,6 +214,11 @@ body {
 
   .user-action-text {
     padding: 0px 0px 0px 12px;
+  }
+
+  .install-icon {
+    border-left: 1px solid #f1f1f1;
+    padding:3px 26px 2px 49px;
   }
 }
 
