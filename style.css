@@ -108,7 +108,7 @@ body {
   .user-actions {
     padding: 2px 0px 2px 0px;
     display: flex;
-    gap: 8px;
+    gap: 7px;
     justify-content: flex-end;
     width: 100%;
     align-items: center;
@@ -118,6 +118,7 @@ body {
     color: #b3b3b3;
     font-family: bold;
     text-decoration: none;
+    letter-spacing: 0.125px;
   }
 
   .install-icon {
@@ -125,9 +126,10 @@ body {
     gap: 8px;
     width: 66px;
     justify-content: center;
-    padding: 2px 26px 3px 48px;
+    padding: 2px 25px 3px 50px;
     white-space: nowrap;
     border-left: 1px solid #f1f1f1;
+    margin-left:16px;
   }
 
   .border-line {
@@ -146,7 +148,7 @@ body {
     font-family: bold;
   }
 
-  .install-icon a {
+  .install-icon .action-btn {
     color: #b3b3b3;
     font-size: 14px;
     font-weight: 700;
@@ -166,7 +168,7 @@ body {
 }
 
 @media screen and (min-width: 1069px) {
-  .home-search-section .home-search-icon{
+  .home-search-section .home-search-icon {
     display: none;
   }
 
@@ -182,7 +184,7 @@ body {
   }
 
   .nav-divider {
-    border-left: 1px solid rgba(255, 255, 255, 0.40);
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
     padding: 0px 0px 0px 12px;
   }
 
@@ -219,12 +221,17 @@ body {
 
   .install-icon {
     border-left: 1px solid #f1f1f1;
-    padding:3px 26px 2px 49px;
+    padding: 2px 26px 2px 50px;
+    margin-left:16px;
   }
 }
 
 @media screen and (min-width: 1077px) {
   .search-input {
     text-overflow: unset;
+    width:193px;
+  }
+  .search-icon{
+    padding:2px 12px 3px 1px;
   }
 }
