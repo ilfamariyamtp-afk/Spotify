@@ -180,7 +180,7 @@ body {
     background-color: #1f1f1f;
     border-radius: 32px;
     padding: 4px 16px 4px 12px;
-    width: 78%;
+    
   }
 
   .nav-divider {
@@ -227,11 +227,40 @@ body {
 }
 
 @media screen and (min-width: 1077px) {
+  .search-section-container{
+    padding:4px 16px 4px 13px;
+  }
   .search-input {
     text-overflow: unset;
     width:193px;
   }
-  .search-icon{
+  /* .search-icon{
     padding:2px 12px 3px 1px;
+  } */
+}
+@media screen and (min-width: 1548px) {
+  .search-section-container{
+    padding:4px 16px 4px 12px;
+  }
+  .search-input{
+    width:331px;
   }
 }
+
+@media screen and (min-width: 1723px) {
+  .home-search-section{
+    display:flex;
+    justify-content: center;
+    position:absolute;
+    left:0;
+    right:0;
+    margin:0;
+  }
+  .search-input {
+   background:transparent;
+  
+}
+
+}
+ 
+
